@@ -16,10 +16,10 @@ function App() {
         <iframe
           title="Result"
           sandbox="allow-scripts"
-          frameBorder="1"
+          // frameBorder="1"
           width="100%"
           height="100%"
-        />
+        ></iframe>
       </div>
     </div>
   );
