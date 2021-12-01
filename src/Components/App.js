@@ -1,15 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Editor from "./Editor";
 
 function App() {
+  const [html, setHtml] = useState("hi i am ATul Saini");
+  const [css, setCss] = useState("");
+  const [js, setJs] = useState("");
+
   return (
     <div className="App">
       {/* upper code section */}
       <div className="upper-section">
-        <Editor /> {/** HTML code editor */}
-        <Editor /> {/** CSS code editor */}
-        <Editor /> {/** JS code editor */}
+        <Editor
+          displayName="HTML"
+          language="xml"
+          value={html}
+          onChange={setHtml}
+        />
+        {/** HTML code editor */}
+        <Editor
+          displayName="CSS"
+          language="css"
+          value={css}
+          onChange={setCss}
+        />
+        {/** CSS code editor */}
+        <Editor
+          displayName="JS"
+          language="javascript"
+          value={js}
+          onChange={setJs}
+        />
+        {/** JS code editor */}
       </div>
       {/* lower visualisation section */}
       <div className="lower-section">
