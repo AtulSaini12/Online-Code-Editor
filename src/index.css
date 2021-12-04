@@ -50,3 +50,26 @@ code {
   border-bottom-right-radius: 0.6em;
   overflow: hidden;
 }
+
+.editor-container.closed {
+  flex-grow: 0;
+}
+
+.editor-container.closed .CodeMirror-scroll {
+  position: absolute;
+  overflow: hidden !important;
+}
+
+.shrink-expand-btn {
+  border: none;
+  background: none;
+  margin-left: 0.4rem;
+}
+
+.open-btn {
+  color: chartreuse;
+}
+
+.close-btn {
+  color: aqua;
+}
