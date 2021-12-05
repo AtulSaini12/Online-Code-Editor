@@ -64,6 +64,11 @@ code {
   border: none;
   background: none;
   margin-left: 0.4rem;
+  border-radius: 0.4rem;
+}
+
+.shrink-expand-btn:hover {
+  background-color: hsl(223, 7%, 41%);
 }
 
 .open-btn {
@@ -72,4 +77,10 @@ code {
 
 .close-btn {
   color: aqua;
+}
+
+@media screen and (min-width: 500px) {
+  .editor-container.closed {
+    flex-shrink: 1;
+  }
 }
